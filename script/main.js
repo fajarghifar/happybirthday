@@ -1,5 +1,27 @@
+// trigger to play music in the background with sweetalert
+window.addEventListener('load', () => {
+  Swal.fire({
+    title: 'Do you want to play music in the background?',
+    // text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes',
+    cancelButtonText: 'No',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      document.querySelector('.song').play();
+      animationTimeline();
+    } else {
+      animationTimeline();
+    }
+  });
+});
+
+
 // animation timeline
-const animationTimeLine = () => {
+const animationTimeline = () => {
   // split chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
@@ -29,7 +51,7 @@ const animationTimeLine = () => {
   // timeline
   const tl = new TimelineMax();
 
-  tl.to(".container", 0.1, {
+  tl.to(".container", 0.6, {
     visibility: "visible"
   })
     .from(".one", 0.7, {
@@ -46,7 +68,7 @@ const animationTimeLine = () => {
         opacity: 0,
         y: 10
       },
-    "+=2.5")
+    "+=3.5")
     .to(".two",
       0.7,
       {
@@ -64,7 +86,7 @@ const animationTimeLine = () => {
         opacity: 0,
         y: 10
       },
-    "+=2")
+    "+=3")
     .from(".four", 0.7, {
       scale: 0.2,
       opacity: 0,
@@ -88,15 +110,14 @@ const animationTimeLine = () => {
       0.5, {
         scale: 0.2,
         opacity: 0,
-        y: -150,
-        delay: 5 //5 meaning will delay in 5s
+        y: -150
       },
-      "+=0.7"
+      "+=5"
     )
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
@@ -104,9 +125,9 @@ const animationTimeLine = () => {
       backgroundColor: "rgb(21, 161, 237)",
       color: "#fff",
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
     .from(
       ".idea-5",
       0.7, {
@@ -117,7 +138,7 @@ const animationTimeLine = () => {
         z: 10,
         opacity: 0,
       },
-      "+=0.5"
+      "+=1.5"
     )
     .to(
       ".idea-5 span",
@@ -125,7 +146,7 @@ const animationTimeLine = () => {
         rotation: 90,
         x: 8,
       },
-      "+=0.4"
+      "+=1.4"
     )
     .to(
       ".idea-5",
@@ -154,7 +175,7 @@ const animationTimeLine = () => {
         ease: Expo.easeOut,
       },
       0.2,
-      "+=1"
+      "+=1.5"
     )
     .staggerFromTo(
       ".baloons img",
@@ -250,5 +271,3 @@ const animationTimeLine = () => {
     tl.restart();
   });
 }
-
-animationTimeLine();
