@@ -1,7 +1,6 @@
 // animation timeline
 const animationTimeLine = () => {
-  // Spit chars that needs to be animated individually
-
+  // split chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -244,6 +243,12 @@ const animationTimeLine = () => {
       },
       "+=1"
     );
+
+  // Restart Animation on click
+  const replyBtn = document.getElementById("replay");
+  replyBtn.addEventListener("click", () => {
+    tl.restart();
+  });
 }
 
 animationTimeLine();
