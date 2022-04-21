@@ -12,9 +12,9 @@ window.addEventListener('load', () => {
   }).then((result) => {
     if (result.isConfirmed) {
       document.querySelector('.song').play();
-      animationTimeline();
+      resolveFetch().then(animationTimeline());
     } else {
-      animationTimeline();
+      resolveFetch().then(animationTimeline());
     }
   });
 });
@@ -104,7 +104,8 @@ const animationTimeline = () => {
     )
     .to(".fake-btn", 0.1, {
       backgroundColor: "rgb(127, 206, 248)",
-    })
+    },
+    "+=4")
     .to(
       ".four",
       0.5, {
@@ -112,8 +113,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: -150
       },
-      "+=5"
-    )
+    "+=1")
     .from(".idea-1", 0.7, ideaTextTrans)
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-2", 0.7, ideaTextTrans)
@@ -271,3 +271,30 @@ const animationTimeline = () => {
     tl.restart();
   });
 }
+
+// Import the data to customize and insert them into page
+const fetchData = () => {
+  fetch("customize.json")
+    .then(data => data.json())
+    .then(data => {
+      Object.keys(data).map(customData => {
+        if (data[customData] !== "") {
+          if (customData === "imagePath") {
+            document
+              .getElementById(customData)
+              .setAttribute("src", data[customData]);
+          } else {
+            document.getElementById(customData).innerText = data[customData];
+          }
+        }
+      });
+    });
+};
+
+// Run fetch and animation in sequence
+const resolveFetch = () => {
+  return new Promise((resolve, reject) => {
+    fetchData();
+    resolve("Fetch done!");
+  });
+};
