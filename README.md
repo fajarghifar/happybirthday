@@ -5,7 +5,7 @@
 </p>
 
 > [Demo](https://fajaraldev.github.io/happybirthday/) &nbsp;&middot;&nbsp;
-> [Documentation](https://fajaral-dev.blogspot.com/2021/04/template-membuat-ucapan-happy-birthday.html)
+> [Documentation](https://www.fajaraldev.com/2021/04/template-membuat-ucapan-happy-birthday.html)
 
 ## 🚀 How to Use
 
