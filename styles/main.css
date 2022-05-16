@@ -97,6 +97,8 @@ body {
 
 .six {
   position: relative;
+  top: 10vh;
+  z-index: 1;
 }
 
 .six img {
@@ -129,6 +131,13 @@ body {
 
 .baloons img:nth-child(3n + 0) {
   left: 30%;
+}
+
+.seven, .eight {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .eight svg {
