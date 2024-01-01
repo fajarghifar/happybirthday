@@ -2,7 +2,6 @@
 window.addEventListener('load', () => {
     Swal.fire({
         title: 'Do you want to play music in the background?',
-        // text: "You won't be able to revert this!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -28,11 +27,11 @@ const animationTimeline = () => {
 
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
         .split("")
-        .join("</span><span>")}</span`;
+        .join("</span><span>")}</span>`;
 
     hbd.innerHTML = `<span>${hbd.innerHTML
         .split("")
-        .join("</span><span>")}</span`;
+        .join("</span><span>")}</span>`;
 
     const ideaTextTrans = {
         opacity: 0,
