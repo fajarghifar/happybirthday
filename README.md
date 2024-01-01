@@ -1,4 +1,4 @@
-## ✨ Say Happy Birthday with a Webpage
+## 🎉 Birthday Greeting Webpage 
 
 [Demo](https://fajarghifar.github.io/happybirthday/)
 
@@ -29,7 +29,7 @@
 
 If you have any ideas to make it more interesting, please submit a pull request or create an issue for a feature request.
 
-# 🤝 License
+## 🤝 License
 
 ### [MIT](LICENSE)
 
