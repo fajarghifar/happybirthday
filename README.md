@@ -28,8 +28,8 @@ Everything is controlled from **one file: `config.js`**.
 ### 1. Change the Recipient
 
 ```javascript
-name: "Irene",                        // Recipient's name
-photo: "./img/irene.jpg",             // Photo in the img/ folder
+name: "Kashaf Aiman",                        // Recipient's name
+photo: "./img/kashaf.jpg",             // Photo in the img/ folder
 music: "./music/hbd.mpeg",            // Music in the music/ folder
 ```
 
