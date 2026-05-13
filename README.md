@@ -28,7 +28,7 @@ Everything is controlled from **one file: `config.js`**.
 ### 1. Change the Recipient
 
 ```javascript
-name: "Irene",                        // Recipient's name
+name: "jinu 🤍 ",                        // Recipient's name
 photo: "./img/irene.jpg",             // Photo in the img/ folder
 music: "./music/hbd.mpeg",            // Music in the music/ folder
 ```
@@ -46,7 +46,22 @@ colors: {
 ```
 
 The viewer can also toggle between dark and light mode using the ☀️/🌙 button.
+<!-- Puzzle 2 -->
+<div class="screen hidden" id="s3">
 
+<h2>🔐 Secret Password</h2>
+
+<p>
+Type: icecream 
+</p>
+
+<input type="text" id="pass" placeholder="Enter Password">
+
+<br>
+
+<button onclick="checkPass()">Unlock 🎀</button>
+
+</div>
 ### 3. Edit Sections
 
 Sections are listed in an array. The display order matches the array order.
