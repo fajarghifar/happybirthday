@@ -5,7 +5,9 @@
  * No need to touch HTML, CSS, or any other JavaScript files.
  *
  * AVAILABLE SECTION TYPES:
- *   "greeting"      → Opening greeting with recipient's name
+ *   "greeting"      → PERHATIAN!
+Kamu terpilih secara random untuk menerima sebuah undangan penting.
+Random sih... padahal dari tadi emang aku nyari nama kamu
  *   "announcement"  → Birthday announcement text
  *   "chatbox"       → Chat message with typing animation
  *   "ideas"         → Sequential text reveals, one by one
@@ -27,8 +29,8 @@
 
 const CONFIG = {
   // ── Recipient Info ────────────────────────────────────────────
-  name: "Irene",
-  photo: "./img/irene.jpg",       // Place your photo in the img/ folder
+  name: "Nadiyya",
+  photo: "./img/nadiyya.jpeg",       // Place your photo in the img/ folder
   music: "./music/hbd.mpeg",      // Place your music in the music/ folder
 
   // ── Theme Colors ──────────────────────────────────────────────
@@ -54,9 +56,11 @@ const CONFIG = {
   // Add, remove, duplicate, or reorder as you wish!
   sections: [
     {
-      type: "greeting",
+      type: "PERHATIAN!
+Kamu terpilih secara random untuk menerima sebuah undangan penting.
+Random sih... padahal dari tadi emang aku nyari nama kamu",
       title: "Hi",
-      subtitle: "I really like your name btw!",
+      subtitle: "I really like your eyes btw!",
     },
     {
       type: "countdown",
@@ -65,13 +69,13 @@ const CONFIG = {
     },
     {
       type: "announcement",
-      text: "It's your birthday!! :D",
+      text: "Berdasarkan keputusan sepihak dari panitia, kamu dinyatakan TERPILIH untuk mengikuti sesi bincang santai malam ini. Banding ditolak. Alasan: aku pengen ngobrol sama kamu",
     },
     {
       type: "chatbox",
       message:
-        "Happy birthday to youu!! Wishing you a wonderful year ahead filled with joy, love, and endless happiness!",
-      buttonText: "Send",
+        "Aku cuma mau ngobrol kok. Serius. Nggak ada modus. Nggak ada maksud apa-apa. Nggak ada alasan khusus juga... kecuali satu: aku pengen denger suara kamu. Tapi itu bukan modus kan?",
+      buttonText: "Accept Invitation",
     },
     {
       type: "ideas",
@@ -99,7 +103,7 @@ const CONFIG = {
     },
     {
       type: "profile",
-      wishTitle: "Happy Birthday!",
+      wishTitle: "Lets Talk",
       wishText: "May the js.prototypes always be with you! ;)",
     },
     {
