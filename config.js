@@ -27,7 +27,7 @@
 
 const CONFIG = {
   // ── Recipient Info ────────────────────────────────────────────
-  name: "Irene",
+  name: "jojooooo",
   photo: "./img/irene.jpg",       // Place your photo in the img/ folder
   music: "./music/hbd.mpeg",      // Place your music in the music/ folder
 
@@ -55,8 +55,8 @@ const CONFIG = {
   sections: [
     {
       type: "greeting",
-      title: "Hi",
-      subtitle: "I really like your name btw!",
+      title: "jawaher",
+      subtitle: "like jewelry and shi",
     },
     {
       type: "countdown",
@@ -65,12 +65,12 @@ const CONFIG = {
     },
     {
       type: "announcement",
-      text: "It's your birthday!! :D",
+      text: "It's your birthday gurlll!! :D",
     },
     {
       type: "chatbox",
       message:
-        "Happy birthday to youu!! Wishing you a wonderful year ahead filled with joy, love, and endless happiness!",
+        "Happy birthday to youu!! Wishing you a wonderful year ahead filled with joy, love, and endless happiness also wishing a safe trip!",
       buttonText: "Send",
     },
     {
@@ -80,9 +80,9 @@ const CONFIG = {
         "But then I stopped.",
         "I realised, I wanted to do something <strong>special</strong>.",
         "Because,",
-        "You are Special <span>:)</span>",
+        "nigga You are Special <span>:)</span>",
       ],
-      bigLetters: "SO",
+      bigLetters: "what so ever",
     },
     {
       type: "quote",
@@ -98,9 +98,9 @@ const CONFIG = {
       count: 25,
     },
     {
-      type: "profile",
+      
       wishTitle: "Happy Birthday!",
-      wishText: "May the js.prototypes always be with you! ;)",
+      wishText: "May the nigga you told me about always be with you! ;)",
     },
     {
       type: "fireworks",
