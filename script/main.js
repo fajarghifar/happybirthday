@@ -97,20 +97,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     cancelButtonText: "No",
     background: isDark ? "#1e293b" : "#ffffff",
     color: isDark ? "#f1f5f9" : "#1e293b",
-  }).then(async (result) => {
-    if (result.isConfirmed && audio) {
-      try {
-        await audio.play();
-      } catch (error) {
-        console.error("Music playback failed:", error);
-        alert("Music error: " + error.message);
-      }
+ }).then(async (result) => {
+  if (result.isConfirmed && audio) {
+    try {
+      await audio.play();
+    } catch (error) {
+      console.error("Music playback failed:", error);
+      alert("Music error: " + error.message);
     }
-
-    buildTimeline(rendered);
+  }
+   buildTimeline(rendered);
   });
 });
-
 // ── Timeline Builder ─────────────────────────────────────────────
 function buildTimeline(rendered) {
   const tl = gsap.timeline();
