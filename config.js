@@ -65,12 +65,12 @@ const CONFIG = {
     },
     {
       type: "announcement",
-      text: "It's your birthday!! :D",
+      text: "It's your birthday nigga !! :D",
     },
     {
       type: "chatbox",
       message:
-        "Happy birthday to youu!! Wishing you a wonderful year ahead filled with joy, love, and endless happiness!",
+        "Happy birthday to youu nigga !! Wishing you a wonderful year ahead filled with joy, love, and endless happiness also wishing you a safe trip!",
       buttonText: "Send",
     },
     {
@@ -80,9 +80,9 @@ const CONFIG = {
         "But then I stopped.",
         "I realised, I wanted to do something <strong>special</strong>.",
         "Because,",
-        "You are Special <span>:)</span>",
+        "You are a nigga <span>:)</span>",
       ],
-      bigLetters: "SO",
+      bigLetters: "Soo dont blame me anyway",
     },
     {
       type: "quote",
@@ -98,9 +98,9 @@ const CONFIG = {
       count: 25,
     },
     {
-      type: "profile",
+     
       wishTitle: "Happy Birthday!",
-      wishText: "May the js.prototypes always be with you! ;)",
+      wishText: "May the the guy you told me about always be with you! ;)",
     },
     {
       type: "fireworks",
