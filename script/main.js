@@ -83,8 +83,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     rendered.push({ el, comp, section });
   });
 
+
   // SweetAlert music prompt
   const isDark = currentMode === "dark";
+
   Swal.fire({
     title: "Play music in the background?",
     icon: "question",
@@ -95,10 +97,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     cancelButtonText: "No",
     background: isDark ? "#1e293b" : "#ffffff",
     color: isDark ? "#f1f5f9" : "#1e293b",
-  }).then((result) => {
+  }).then(async (result) => {
     if (result.isConfirmed && audio) {
-      audio.play().catch(() => {});
+      try {
+        await audio.play();
+      } catch (error) {
+        console.error("Music playback failed:", error);
+        alert("Music error: " + error.message);
+      }
     }
+
     buildTimeline(rendered);
   });
 });
