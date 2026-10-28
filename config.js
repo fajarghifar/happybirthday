@@ -27,9 +27,9 @@
 
 const CONFIG = {
   // ── Recipient Info ────────────────────────────────────────────
-  name: "jojooooo",
+  name: "joojoo",
   photo: "./img/irene.jpg",       // Place your photo in the img/ folder
-  music: "./music/hbd.mpeg",      // Place your music in the music/ folder
+  music: "./music/Mi_-_Sure_Thing_WISKIM_REMIX_(mp3.pm).mp3",      // Place your music in the music/ folder
 
   // ── Theme Colors ──────────────────────────────────────────────
   // A toggle button lets the viewer switch between dark & light mode.
@@ -55,13 +55,13 @@ const CONFIG = {
   sections: [
     {
       type: "greeting",
-      title: "jawaher",
-      subtitle: "like jewelry and shi",
+      title: "Jawaher",
+      subtitle: "Jawaher refers to jewelry.",
     },
     {
       type: "countdown",
       from: 3,                    // Countdown from this number
-      goText: "🎉",              // Text shown after countdown ends
+      goText: "🎉 nigga",              // Text shown after countdown ends
     },
     {
       type: "announcement",
@@ -80,7 +80,7 @@ const CONFIG = {
         "But then I stopped.",
         "I realised, I wanted to do something <strong>special</strong>.",
         "Because,",
-        "nigga You are Special <span>:)</span>",
+        "You are special <span>:)</span>",
       ],
       bigLetters: "what so ever",
     },
@@ -98,9 +98,8 @@ const CONFIG = {
       count: 25,
     },
     {
-      
       wishTitle: "Happy Birthday!",
-      wishText: "May the nigga you told me about always be with you! ;)",
+      wishText: "May the guy you told me about always be with you! ;)"
     },
     {
       type: "fireworks",
